@@ -1,0 +1,177 @@
+<!DOCTYPE html>
+<html lang="tr">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>rosHaBa | Çözüm Merkezi</title>
+  <style>
+    * {
+      box-sizing: border-box;
+      margin: 0;
+      padding: 0;
+    }
+
+    body {
+      font-family: Arial, sans-serif;
+      background: #f5f7fa;
+      color: #222;
+    }
+
+    header {
+      background: #111827;
+      color: white;
+      padding: 30px 20px;
+      text-align: center;
+    }
+
+    header h1 {
+      font-size: 32px;
+      margin-bottom: 10px;
+    }
+
+    header p {
+      color: #16a34a;
+      font-size: 17px;
+      font-weight: bold;
+    }
+
+    .container {
+      max-width: 1000px;
+      margin: 40px auto;
+      padding: 0 20px;
+    }
+
+    .title {
+      text-align: center;
+      margin-bottom: 30px;
+    }
+
+    .title h2 {
+      font-size: 30px;
+      margin-bottom: 10px;
+    }
+
+    .title p {
+      color: #666;
+    }
+
+    .categories {
+      display: grid;
+      grid-template-columns: repeat(auto-fit, minmax(220px, 1fr));
+      gap: 18px;
+    }
+
+    .card {
+      background: white;
+      border-radius: 16px;
+      padding: 25px 20px;
+      text-align: center;
+      box-shadow: 0 5px 18px rgba(0,0,0,0.08);
+    }
+
+    .card h3 {
+      margin-bottom: 10px;
+      font-size: 19px;
+    }
+
+    .card p {
+      color: #666;
+      font-size: 14px;
+    }
+
+    .contact {
+      margin-top: 40px;
+      background: #111827;
+      color: white;
+      border-radius: 18px;
+      padding: 30px 20px;
+      text-align: center;
+    }
+
+    .contact h2 {
+      margin-bottom: 12px;
+    }
+
+    .phone {
+      display: inline-block;
+      margin-top: 15px;
+      color: white;
+      background: #16a34a;
+      padding: 13px 22px;
+      border-radius: 10px;
+      text-decoration: none;
+      font-weight: bold;
+    }
+
+    footer {
+      margin-top: 50px;
+      padding: 25px;
+      text-align: center;
+      background: #0b1220;
+      color: #aaa;
+    }
+  </style>
+</head>
+
+<body>
+
+  <header>
+    <h1>rosHaBa</h1>
+    <p>İhtiyacın Olan Hizmete Güvenle Ulaş.</p>
+  </header>
+
+  <main class="container">
+
+    <section class="title">
+      <h2>Çözüm Merkezi</h2>
+      <p>İhtiyacınıza uygun hizmet kategorisini seçin.</p>
+    </section>
+
+    <section class="categories">
+
+      <div class="card">
+        <h3>Eğitimler</h3>
+        <p>Eğitim, kurs ve gelişim hizmetleri.</p>
+      </div>
+
+      <div class="card">
+        <h3>Temizlik</h3>
+        <p>Ev, iş yeri ve profesyonel temizlik hizmetleri.</p>
+      </div>
+
+      <div class="card">
+        <h3>Medikal / Sağlık Ürünleri</h3>
+        <p>Medikal ve sağlık ürünlerine yönelik çözümler.</p>
+      </div>
+
+      <div class="card">
+        <h3>Teknik Hizmetler</h3>
+        <p>Teknik destek, bakım ve çözüm hizmetleri.</p>
+      </div>
+
+      <div class="card">
+        <h3>İşletme Hizmetleri</h3>
+        <p>İşletmelere yönelik profesyonel hizmet çözümleri.</p>
+      </div>
+
+      <div class="card">
+        <h3>Diğer Hizmetler</h3>
+        <p>Farklı ihtiyaçlarınız için diğer hizmet seçenekleri.</p>
+      </div>
+
+    </section>
+
+    <section class="contact">
+      <h2>İletişim</h2>
+      <p>Hizmetler hakkında bilgi almak için bize ulaşabilirsiniz.</p>
+      <a class="phone" href="tel:05376698901">0537 669 89 01</a>
+    </section>
+
+  </main>
+
+  <footer>
+    © 2026 rosHaBa | Tüm hakları saklıdır.
+  </footer>
+
+</body>
+</html>
