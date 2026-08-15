@@ -4,6 +4,228 @@
 <meta charset="UTF-8">
 <meta name="viewport" content="width=device-width, initial-scale=1.0">
 <title>rosHaBa | Hizmet Platformu</title>
+  /* rosHaBa yeni ana sayfa tasarımı */
+
+.rhb-new-home {
+    background: #f2f4f3;
+    color: #111;
+}
+
+.rhb-new-hero {
+    min-height: 680px;
+    position: relative;
+    overflow: hidden;
+    background:
+        radial-gradient(circle at 75% 35%, rgba(140,190,80,.25), transparent 30%),
+        linear-gradient(110deg,#020910,#081820 55%,#263b3b);
+}
+
+.rhb-new-container {
+    width: 94%;
+    max-width: 1450px;
+    margin: auto;
+}
+
+.rhb-new-nav {
+    height: 105px;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+}
+
+.rhb-new-logo {
+    font-size: 40px;
+    font-weight: 800;
+    color: white;
+}
+
+.rhb-new-logo span {
+    color: #9dce45;
+}
+
+.rhb-new-logo small {
+    display: block;
+    font-size: 10px;
+    letter-spacing: 5px;
+    font-weight: 400;
+}
+
+.rhb-new-menu {
+    display: flex;
+    gap: 35px;
+}
+
+.rhb-new-menu a {
+    color: white;
+    text-decoration: none;
+    font-weight: 600;
+}
+
+.rhb-new-menu a:hover {
+    color: #9dce45;
+}
+
+.rhb-new-login {
+    border: 1px solid white;
+    border-radius: 30px;
+    padding: 13px 24px;
+    color: white;
+    text-decoration: none;
+}
+
+.rhb-new-content {
+    padding: 65px 0 110px;
+}
+
+.rhb-new-badge {
+    display: inline-block;
+    padding: 11px 18px;
+    border: 1px solid rgba(255,255,255,.25);
+    border-radius: 30px;
+    color: white;
+}
+
+.rhb-new-title {
+    max-width: 700px;
+    margin-top: 32px;
+    font-size: clamp(45px,6vw,78px);
+    line-height: 1;
+    color: white;
+}
+
+.rhb-new-title span {
+    color: #9dce45;
+}
+
+.rhb-new-text {
+    max-width: 570px;
+    color: #e5e5e5;
+    font-size: 20px;
+    line-height: 1.5;
+    margin-top: 25px;
+}
+
+.rhb-new-buttons {
+    display: flex;
+    gap: 14px;
+    margin-top: 30px;
+}
+
+.rhb-new-button {
+    padding: 17px 28px;
+    border-radius: 35px;
+    text-decoration: none;
+    font-weight: 700;
+}
+
+.rhb-new-primary {
+    background: linear-gradient(135deg,#a9d653,#57902f);
+    color: white;
+}
+
+.rhb-new-secondary {
+    color: white;
+    border: 1px solid rgba(255,255,255,.4);
+}
+
+/* Hizmet kartları */
+
+.rhb-new-services {
+    margin-top: -45px;
+    position: relative;
+    z-index: 5;
+}
+
+.rhb-new-grid {
+    display: grid;
+    grid-template-columns: repeat(6,1fr);
+    gap: 12px;
+}
+
+.rhb-new-card {
+    background: white;
+    border-radius: 18px;
+    padding: 22px;
+    min-height: 165px;
+    box-shadow: 0 10px 25px rgba(0,0,0,.10);
+}
+
+.rhb-new-card-icon {
+    width: 42px;
+    height: 42px;
+    border-radius: 10px;
+    background: #e7f1df;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    margin-bottom: 12px;
+    font-size: 21px;
+}
+
+.rhb-new-card h3 {
+    font-size: 16px;
+    margin-bottom: 12px;
+}
+
+.rhb-new-card p {
+    color: #555;
+    font-size: 13px;
+    line-height: 1.5;
+}
+
+.rhb-new-arrow {
+    display: block;
+    text-align: right;
+    color: #3d7650;
+    font-size: 23px;
+}
+
+@media(max-width:1000px) {
+
+    .rhb-new-menu {
+        display: none;
+    }
+
+    .rhb-new-grid {
+        grid-template-columns: repeat(3,1fr);
+    }
+}
+
+@media(max-width:600px) {
+
+    .rhb-new-logo {
+        font-size: 30px;
+    }
+
+    .rhb-new-content {
+        padding: 45px 0 80px;
+    }
+
+    .rhb-new-title {
+        font-size: 43px;
+    }
+
+    .rhb-new-text {
+        font-size: 17px;
+    }
+
+    .rhb-new-buttons {
+        flex-direction: column;
+    }
+
+    .rhb-new-button {
+        text-align: center;
+    }
+
+    .rhb-new-grid {
+        grid-template-columns: 1fr;
+    }
+
+    .rhb-new-services {
+        margin-top: -25px;
+        padding: 0 15px;
+    }
+}
 <style>
 *{box-sizing:border-box;margin:0;padding:0}
 body{font-family:Arial,sans-serif;background:#f7f8fa;color:#222;line-height:1.6}
